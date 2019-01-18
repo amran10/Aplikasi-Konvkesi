@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "auth_wj/index";
+$route['default_controller'] = "welcome/index";
 $route['404_override'] = '';
 
 
