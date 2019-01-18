@@ -1,0 +1,97 @@
+
+	function kirim_pesan($tpe_untuk,$tpe_subyek ,$tpe_pesan,$tpe_dari=""){
+		global $f;
+		global $_COOKIE;
+		global $db,$REMOTE_ADDR;
+		if(empty($tpe_dari)) $tpe_dari = $_COOKIE["login_nip"];
+		$tpe_id=$f->generate_nomorkolom("tbl_pesan","tpe_id","TPE");
+		$columns .="tpe_id,tpe_subyek,tpe_dari,tpe_tanggal,tpe_untuk,tpe_pesan,tpe_status,tpe_untuk_grup,ip,tpe_prioritas";
+		$values 	.="'$tpe_id','$tpe_subyek','ADMIN',sysdate,'$tpe_untuk','$tpe_pesan','0','','$REMOTE_ADDR','1'";
+	
+			$sql="insert into tbl_pesan  ($columns) values ($values)";
+			$result=$db->Execute($sql);
+			
+			if (!$result){
+				print $db->ErrorMsg();
+				die($sql_insert);
+			}					
+	}
+	function upload_file($array){
+		$dir		=$array['dir'];
+		$change_file=$array['change_file'];
+		$path_old	=$array['path_old'];
+		$act		=$array['act'];
+		$input_name	=$array['input_name'];
+		
+		global $db,$f;
+		global $HTTP_POST_FILES;
+		global $DOCUMENT_ROOT,$REMOTE_ADDR,$login_nip,$REQUEST_URI,$PHP_SELF;
+			if(($act=='do_update' && $change_file=='2') || $act=='do_add'){ //change file 
+				$filename=time()."_".$HTTP_POST_FILES[$input_name]['name'];
+				$filename=preg_replace("/\'|\s|\"|\-/","_",strtolower($filename));
+				if(empty($dir)){
+					$dir ="$DOCUMENT_ROOT/i/upload";
+				}else{
+					$dir =$DOCUMENT_ROOT."$dir";
+				}
+				if(eregi("\.php",$filename)){
+					$this->logfile(array("filename"=>"ilegal_upload.log","message"=>"$REMOTE_ADDR,$login_nip,$REQUEST_URI $PHP_SELF"));
+					die('file extensi ini tidak diperbolehkan untuk diupload ke server!');
+				}
+				move_uploaded_file($HTTP_POST_FILES[$input_name]['tmp_name'],"$dir/$filename") or die("upload gagal. periksa permission direktori $dir");
+				$path=eregi_replace("$DOCUMENT_ROOT","","$dir/$filename");
+				
+			}elseif($act=='do_update' && $change_file=='3'){ //delete
+				//$path_old=$f->convert_value(array("table"=>"","cs"=>"path","cd"=>"dik_id","vd"=>"$dik_id"));
+				unlink("$DOCUMENT_ROOT$path_old");
+				$path="";
+			}
+		return $path;
+	}
+	
+	function input_image($nama_input,$file_location,$keterangan=""){
+		global $db;
+		global $act;
+		$output .="<input type=file name=$nama_input value='$path'> <BR>$keterangan<BR>";
+		#if($act=='update'){
+			$output .="<table class=noindex><tr><td valign=top width=10>";
+			$output .= (!empty($file_location)?$this->check_file_type($file_location,$file_location,"_blank"):"")."<BR>";
+			$output .="</td><td>
+			<input type=radio name=change_file value='1' checked>Keep File
+			<input type=radio name=change_file value='2'>Change<BR>
+			<input type=radio name=change_file value='3'>Delete</td></tr>
+			</table>";
+		#}
+		return  $output;
+	
+	}
+	function check_file_type($filename,$href="",$target=""){
+		global $download;
+		$extension=substr($filename,-4);
+		if(eregi("pdf",$extension)){
+			$icon="<img src=/i/icon/pdf.gif border=0>";
+		}elseif(eregi("jpg|jpeg",$extension)){
+			$icon="<img src=/i/icon/jpg.gif border=0>";
+		}elseif(eregi("png",$extension)){
+			$icon="<img src=/i/icon/png.gif border=0>";
+		}elseif(eregi("gif",$extension)){
+			$icon="<img src=/i/icon/gif.gif border=0>";
+		}elseif(eregi("doc",$extension)){
+			$icon="<img src=/i/icon/doc.gif border=0>";
+		}elseif(eregi("xls",$extension)){
+			$icon="<img src=/i/icon/xls.gif border=0>";
+		}elseif(eregi("ppt",$extension)){
+			$icon="<img src=/i/icon/ppt.gif border=0>";
+		}elseif(eregi("rar|zip",$extension)){
+			$icon="<img src=/i/icon/zip.gif border=0>";
+		}else{
+			$icon=$extension;
+		}
+		if($download == '0'){
+			return "$icon";
+		}else{
+			return "<a href=$href target=$target>$icon</a>";		
+		}
+	}
+
+}

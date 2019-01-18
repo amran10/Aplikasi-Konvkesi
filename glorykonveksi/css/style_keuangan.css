@@ -1,0 +1,187 @@
+/****************************/
+/* The Usual 				*/
+/****************************/
+
+body {
+	font-family: Arial;
+	text-align: left;
+	color: #313131;
+	line-height: 1.7em;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+/*
+p, div, td {
+
+	font-family: Arial;
+	line-height: 1.7em;
+}
+*/
+p {
+	margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5 {
+	line-height: 1.8em;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+em, b, strong {
+	font-weight: bold;
+}
+
+ul {
+	margin: 10px 0 10px 25px;
+}
+
+ul li {
+	list-style: disc;
+}
+
+ol {
+	margin: 10px 0 10px 25px;	
+}
+
+ol li {
+	list-style: decimal;
+}
+
+li {
+	
+}
+
+a {
+	
+}
+
+a:hover {
+	
+}
+
+/****************************/
+/* Layout	 				*/
+/****************************/
+
+#header {
+	background-color: #A01A37;
+	color: #fff;
+	padding-left: 15px;
+	height: 44px;
+}
+
+.bordertop {
+	border-top: 1px solid #999999;
+}
+
+/****************************/
+/* Table	 				*/
+/****************************/
+
+/*
+table {
+	
+}
+
+table th {
+	text-align: center !important;
+}
+
+table tr {
+	
+}
+
+table tr td {
+	vertical-align: top;
+	text-align: left;
+	padding: 4px 10px;
+}
+*/
+
+.inputbox {
+	border: 1px solid black;
+	padding: 2px;
+}
+
+/****************************/
+/* Menu		 				*/
+/****************************/
+
+#menu {
+	overflow: hidden;
+	background-color: #dfdfde;
+	padding: 0px 9px;
+
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+}	
+
+#menu a.daddy {
+	background: url(/css/rightarrow2.gif) center right no-repeat ;
+	padding-right: 10px;
+}
+
+#menu ul li {
+	list-style: none;	
+	float: left;
+}
+
+#menu ul li ul li {
+	display: block;
+	width: 25em;
+}
+
+#menu ul li a {
+	display: block;
+	color: #313131;
+	text-decoration: none;
+	padding: 2px 7px;
+	margin-right: 1px;
+}
+
+#menu ul li a:hover, #menu ul li.active a {
+	background-color: #efefef;
+}
+
+#menu li ul {
+	border: 1px solid #999999;
+	background-color: #fff;
+	width: 25em;
+	position: absolute;
+	left: -999em;
+}
+
+#menu li ul li a:hover {
+	background-color: #dfdfde;
+}
+
+#menu li:hover ul {
+	left: auto;
+}
+
+#menu li ul ul {
+	margin: -2em 0 0 25em;
+}
+
+#menu li:hover ul ul, #menu li.sfhover ul ul {
+	left: -999em;
+}
+
+#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul {
+	left: auto;
+}
+

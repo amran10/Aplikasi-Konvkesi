@@ -1,0 +1,45 @@
+.img-caption p {
+	margin: 0px;
+}
+.img-caption-bottom p {
+	margin: 0px;
+}
+.img-caption .caption {
+	margin: 0px; padding: 20px; top: 0px; width: 190px; height: 117px; color: rgb(51, 51, 51); line-height: 13px; font-size: 10px; display: block; position: absolute; z-index: 100;
+}
+.img-caption td:first-child .caption {
+	right: -190px;
+}
+.img-caption td:last-child .caption {
+	left: -190px;
+}
+.img-caption {
+	margin: 20px auto; width: 560px; display: block;
+}
+.img-caption td {
+	overflow: hidden; float: left; display: block; position: relative; cursor: pointer;
+}
+.img-caption td .title {
+	padding: 10px 17px; width: 200px; color: rgb(255, 255, 255); letter-spacing: 2px; font-family: Myriad-CnWeb; font-size: 14px; font-weight: bold; display: block; position: absolute; z-index: 100;
+}
+.img-caption td:first-child .title {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.78) 39%, rgba(0, 0, 0, 0.43) 82%, rgba(0, 0, 0, 0) 100%); top: 14px; border-bottom-right-radius: 20px;
+}
+.img-caption td:last-child .title {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.43) 18%, rgba(0, 0, 0, 0.78) 61%, rgba(0, 0, 0, 0.98) 100%); top: 14px; text-align: right; right: 0px;
+}
+.img-caption a {
+	display: block; position: relative;
+}
+.img-caption-bottom {
+	margin: 0px auto; width: 560px;
+}
+.img-caption-bottom a {
+	width: 179px; overflow: hidden; display: block; position: relative;
+}
+.img-caption-bottom .title {
+	background: rgba(0, 0, 0, 0.8); padding: 10px 6px; width: 100%; bottom: 0px; color: rgb(255, 255, 255); font-size: 10px; position: absolute;
+}
+.img-caption tr td:first-child .caption {
+	text-align: right !important;
+}

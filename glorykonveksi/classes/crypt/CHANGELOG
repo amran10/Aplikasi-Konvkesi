@@ -1,0 +1,7 @@
+**  2006/03/09 -- Hex keys made easier! The way it should be
+**  2004/11/23 -- Correct naming, new way of calling RC4Class
+**  2004/04/28 -- Bug fix for incorrect output due to XORing stupidity
+**                [Ariel Arjona (beerfrick@users.sourceforge.net)]
+**  2003/11/15 -- Cleans urlencode's, fixed the invalid outputs
+**  2003/02/22 -- A fix, which turned out to be a bug!
+**  2001/02/24 -- Passes RC4 Vector Harness

@@ -1,0 +1,45 @@
+.ls-transition-preview {
+	width: 300px !important; height: 150px !important; position: relative;
+}
+.ls-transition-preview .ls-overflow-hidden {
+	overflow: hidden;
+}
+.ls-transition-preview .ls-lt-tile {
+	overflow: hidden; float: left; position: relative;
+}
+.ls-transition-preview .ls-curtile {
+	width: 100% !important; height: 100% !important; right: auto !important; bottom: auto !important; overflow: hidden; position: absolute;
+}
+.ls-transition-preview .ls-nexttile {
+	width: 100% !important; height: 100% !important; right: auto !important; bottom: auto !important; overflow: hidden; position: absolute;
+}
+.ls-transition-preview .ls-curtile {
+	left: 0px; top: 0px;
+}
+.ls-transition-preview .ls-curtile img {
+	left: 0px; top: 0px; filter: inherit; position: absolute;
+}
+.ls-transition-preview .ls-nexttile img {
+	left: 0px; top: 0px; filter: inherit; position: absolute;
+}
+.ls-transition-preview .ls-3d-container {
+	overflow: visible !important; position: relative; perspective: 500px !important; -o-perspective: 500px; -moz-perspective: 500px; -webkit-perspective: 500px;
+}
+.ls-transition-preview .ls-3d-box {
+	left: 50%; top: 50%; position: absolute; -o-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -webkit-transform-style: preserve-3d;
+}
+.ls-transition-preview .ls-3d-box div {
+	background: rgb(119, 119, 119); margin: 0px; padding: 0px; overflow: hidden; position: absolute; -o-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -webkit-transform-style: preserve-3d;
+}
+.ls-transition-preview {
+	transform: translateZ(0px); -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+.ls-transition-preview * {
+	transform: translateZ(0px); -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+@media not all, not all, not all, not all, not all
+{
+#ls-test3d {
+	left: 9px; height: 3px; position: absolute;
+}
+}

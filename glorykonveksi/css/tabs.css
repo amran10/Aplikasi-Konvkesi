@@ -1,0 +1,8 @@
+.etabs { margin: 0; padding: 0; border-bottom: 1px solid #727272;line-height: 3em; margin-top: 15px;color:#000000;}
+.tab { display: inline-block; zoom:1; *display:inline; border-top-left-radius: 3px; border-top-right-radius: 3px; text-align: center; font-size:12px;}
+.tab a {line-height: 3em; display: block; padding: 0 10px; outline: none; text-decoration: none; color: #000000;}
+.tab a:hover { text-decoration: none; background:#ebebeb; border-top-left-radius: 3px; border-top-right-radius: 3px;color: #000000;}
+.tab.active { position: relative; top: 1px;background: url('/i/phiro/nav_bg.png');border-top-left-radius: 3px; border-top-right-radius: 3px;}
+.tab a.active { color: #FFFFFF; }
+.tab-container .panel-container {padding-top: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+.panel-container { margin-bottom: 10px; }

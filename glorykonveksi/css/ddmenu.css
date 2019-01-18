@@ -1,0 +1,28 @@
+.ddpanel .ddpanelcontentalt{
+color: black;
+background: #B2E0F8;
+}
+
+.ddpanel .ddpaneltabalt a{
+background-color: #B2E0F8;
+color:black;
+}
+
+.ddpanel .ddpaneltabalt a:hover{
+background-color: #79B2CF;
+}
+
+
+.ddpanel .ddpanelcontentalt2{
+color: black;
+background: #B2E0F8;
+}
+
+.ddpanel .ddpaneltabalt2 a{
+background-color: #FFFFC0;
+color:black;
+}
+
+.ddpanel .ddpaneltabalt2 a:hover{
+background-color: #E1E1C1;
+}

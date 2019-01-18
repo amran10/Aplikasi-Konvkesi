@@ -1,0 +1,19 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INSTALLATION INSTRUCTIONS
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+(1) Un (tar/zip) the rc4crypt.(tar/zip) file
+(2) Read the gpl.txt
+(3) Look at the rc4test.php, should be self explanatory
+
+Now, a few points to note:
+
+	(A) Try to pass keys as hexadecimal as much as possible, also don't forget
+	    to put $ispwdHex = 1 if you do.
+
+	(B) All data passed to the functions, should be what you exactly want to encrypt
+	    and any data you want to decrypt, should be data send back directly from the
+	    encrypt function. Beware of urlencoding/urldecoding
+
+	(C) AND more importantly worry about magic_quotes in your code! I've put
+	    the magic quotes check just in case

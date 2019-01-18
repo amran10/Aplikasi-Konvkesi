@@ -1,0 +1,579 @@
+.ls-container {
+	visibility: hidden; position: relative;
+}
+.ls-lt-container {
+	position: absolute;
+}
+.ls-lt-container {
+	text-align: left !important; direction: ltr !important;
+}
+.ls-lt-container * {
+	text-align: left !important; direction: ltr !important;
+}
+.ls-container-fullscreen {
+	background: black !important; margin: 0px auto !important; padding: 2% !important; border-radius: 0px !important; border: currentColor !important; border-image: none !important; -moz-border-radius: 0px; -webkit-border-radius: 0px;
+}
+.ls-container-fullscreen .ls-thumbnail-wrapper {
+	display: none !important;
+}
+.ls-container-fullscreen .ls-fullscreen {
+	display: none !important;
+}
+.ls-container-fullscreen .ls-shadow {
+	display: none !important;
+}
+.ls-overflow-hidden {
+	overflow: hidden;
+}
+.ls-inner {
+	background-position: center; position: relative; z-index: 2;
+}
+.ls-loading-container {
+	left: 50% !important; top: 50% !important; display: none; position: absolute !important; z-index: 3 !important;
+}
+.ls-loading-indicator {
+	margin: 0px auto;
+}
+.ls-inner {
+	width: 100%; height: 100%;
+}
+.ls-layer {
+	width: 100%; height: 100%;
+}
+.ls-layer {
+	background-position: center; overflow: hidden; display: none; position: absolute;
+}
+.ls-active {
+	display: block !important;
+}
+.ls-animating {
+	display: block !important;
+}
+.ls-layer > * {
+	margin: 0px; left: 0px; top: 0px; line-height: normal; position: absolute;
+}
+.ls-layer .ls-bg {
+	left: 50%; top: 50%;
+}
+.ls-yourlogo {
+	position: absolute; z-index: 99;
+}
+.ls-bar-timer {
+	background: white; top: 0px; width: 0px; height: 2px; border-bottom-color: rgb(85, 85, 85); border-bottom-width: 2px; border-bottom-style: solid; position: absolute; z-index: 4; opacity: 0.55;
+}
+.ls-circle-timer {
+	top: 10px; width: 24px; height: 24px; right: 10px; display: none; position: absolute; z-index: 4; opacity: 0.65;
+}
+.ls-ct-half {
+	background: white;
+}
+.ls-ct-center {
+	background: rgb(68, 68, 68);
+}
+.ls-ct-left {
+	width: 50%; height: 100%; overflow: hidden;
+}
+.ls-ct-right {
+	width: 50%; height: 100%; overflow: hidden;
+}
+.ls-ct-left {
+	float: left; position: relative;
+}
+.ls-ct-right {
+	float: left; position: relative;
+}
+.ls-ct-rotate {
+	top: 0px; width: 200%; height: 100%; position: absolute;
+}
+.ls-ct-left .ls-ct-rotate {
+	left: 0px;
+}
+.ls-ct-right .ls-ct-hider {
+	left: 0px;
+}
+.ls-ct-right .ls-ct-half {
+	left: 0px;
+}
+.ls-ct-right .ls-ct-rotate {
+	right: 0px;
+}
+.ls-ct-left .ls-ct-hider {
+	right: 0px;
+}
+.ls-ct-left .ls-ct-half {
+	right: 0px;
+}
+.ls-ct-hider {
+	top: 0px; position: absolute;
+}
+.ls-ct-half {
+	top: 0px; position: absolute;
+}
+.ls-ct-hider {
+	width: 50%; height: 100%; overflow: hidden;
+}
+.ls-ct-half {
+	width: 200%; height: 100%;
+}
+.ls-ct-center {
+	left: 30%; top: 30%; width: 40%; height: 40%; position: absolute;
+}
+.ls-ct-half {
+	border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px;
+}
+.ls-ct-center {
+	border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px;
+}
+.ls-bottom-nav-wrapper {
+	height: 0px;
+}
+.ls-bottom-slidebuttons {
+	text-align: left;
+}
+.ls-bottom-nav-wrapper {
+	margin: 0px auto; height: 0px; text-align: center; position: relative; z-index: 2;
+}
+.ls-below-thumbnails {
+	margin: 0px auto; height: 0px; text-align: center; position: relative; z-index: 2;
+}
+.ls-below-thumbnails {
+	display: none; z-index: 6;
+}
+.ls-bottom-nav-wrapper a {
+	
+}
+.ls-nav-prev {
+	
+}
+.ls-nav-next {
+	
+}
+* .ls-bottom-nav-wrapper * {
+	direction: ltr !important;
+}
+* .ls-bottom-nav-wrapper span * {
+	direction: ltr !important;
+}
+.ls-bottom-slidebuttons {
+	position: relative; z-index: 1000;
+}
+.ls-bottom-slidebuttons {
+	position: relative;
+}
+.ls-nav-start {
+	position: relative;
+}
+.ls-nav-stop {
+	position: relative;
+}
+.ls-nav-sides {
+	position: relative;
+}
+.ls-nothumb {
+	text-align: center !important;
+}
+.ls-link {
+	background: url("blank.gif"); left: 0px !important; top: 0px !important; width: 100% !important; height: 100% !important; position: absolute;
+}
+.ls-vpcontainer {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.ls-videopreview {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; cursor: pointer;
+}
+.ls-playvideo {
+	left: 50%; top: 50%; position: absolute; cursor: pointer;
+}
+.ls-tn {
+	display: none !important;
+}
+.ls-thumbnail-hover {
+	left: 0px; display: none; position: absolute;
+}
+.ls-thumbnail-hover-inner {
+	left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: absolute;
+}
+.ls-thumbnail-hover-bg {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.ls-thumbnail-hover-img {
+	overflow: hidden; position: absolute;
+}
+.ls-thumbnail-hover img {
+	left: 50%; top: 0px; display: inline-block; visibility: visible !important; position: absolute; max-width: none !important;
+}
+.ls-thumbnail-hover span {
+	left: 50%; top: 100%; width: 0px; height: 0px; border-right-color: transparent !important; border-bottom-color: transparent !important; border-left-color: transparent !important; display: block; position: absolute;
+}
+.ls-thumbnail-wrapper {
+	margin: 0px auto; width: 100%; position: relative; z-index: 4;
+}
+.ls-thumbnail {
+	margin: 0px auto; position: relative;
+}
+.ls-thumbnail-inner {
+	width: 100%;
+}
+.ls-thumbnail-slide-container {
+	width: 100%;
+}
+.ls-thumbnail-slide-container {
+	overflow: hidden !important; position: relative;
+}
+.ls-touchscroll {
+	-ms-overflow-x: auto !important;
+}
+.ls-thumbnail-slide {
+	text-align: center; float: left; white-space: nowrap; position: relative;
+}
+.ls-thumbnail-slide a {
+	width: 0px; height: 0px; overflow: hidden; display: inline-block; position: relative;
+}
+.ls-thumbnail-slide img {
+	height: 100%; visibility: visible !important; max-height: 100% !important; max-width: none !important;
+}
+.ls-shadow {
+	left: 0px; top: 100%; width: 100%; overflow: hidden !important; display: none; visibility: hidden; position: absolute; z-index: 1;
+}
+.ls-shadow img {
+	left: 0px !important; width: 100% !important; height: auto !important; bottom: 0px !important; position: absolute !important;
+}
+.ls-bottom-nav-wrapper {
+	visibility: hidden;
+}
+.ls-thumbnail-wrapper {
+	visibility: hidden;
+}
+.ls-nav-prev {
+	visibility: hidden;
+}
+.ls-nav-next {
+	visibility: hidden;
+}
+.ls-wp-fullwidth-container {
+	width: 100%; position: relative;
+}
+.ls-wp-fullwidth-helper {
+	position: absolute;
+}
+.ls-overflow-hidden {
+	overflow: hidden;
+}
+.ls-lt-tile {
+	float: left; position: relative; perspective: 500px; -o-perspective: 500px; -moz-perspective: 500px; -webkit-perspective: 500px;
+}
+.ls-curtiles {
+	overflow: hidden;
+}
+.ls-curtiles {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.ls-nexttiles {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.ls-curtile {
+	width: 100% !important; height: 100% !important; overflow: hidden; position: absolute;
+}
+.ls-nexttile {
+	width: 100% !important; height: 100% !important; overflow: hidden; position: absolute;
+}
+.ls-curtile {
+	left: 0px; top: 0px;
+}
+.ls-curtile img {
+	filter: inherit; position: absolute;
+}
+.ls-nexttile img {
+	filter: inherit; position: absolute;
+}
+.ls-3d-container {
+	overflow: visible !important; position: relative; perspective: 1000px; -o-perspective: 1000px; -moz-perspective: 1000px; -webkit-perspective: 1000px;
+}
+.ls-3d-box {
+	left: 50%; top: 50%; position: absolute; -o-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -webkit-transform-style: preserve-3d;
+}
+.ls-3d-box div {
+	background: rgb(119, 119, 119); margin: 0px; padding: 0px; overflow: hidden; position: absolute; -o-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -webkit-transform-style: preserve-3d;
+}
+.ls-fullscreen {
+	display: block; position: absolute; z-index: 10; cursor: pointer;
+}
+html * .ls-nav-prev {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+html * .ls-nav-next {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+html * .ls-container img {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+html * .ls-bottom-nav-wrapper a {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+html * .ls-container .ls-fullscreen {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+body * .ls-nav-prev {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+body * .ls-nav-next {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+body * .ls-container img {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+body * .ls-bottom-nav-wrapper a {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+body * .ls-container .ls-fullscreen {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+#ls-global * .ls-nav-prev {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+#ls-global * .ls-nav-next {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+#ls-global * .ls-container img {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+#ls-global * .ls-bottom-nav-wrapper a {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+#ls-global * .ls-container .ls-fullscreen {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+html * .ls-thumbnail a {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+body * .ls-thumbnail a {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+#ls-global * .ls-thumbnail a {
+	padding: 0px; border: 0px currentColor; transition:none; border-image: none; line-height: normal; -webkit-transition: none; -o-transition: none; -moz-transition: none;
+}
+html * .ls-container img {
+	background: none !important; padding: 0px; border-radius: 0px; border: 0px currentColor; border-image: none; min-width: 0px !important; max-width: none !important; box-shadow: none;
+}
+body * .ls-container img {
+	background: none !important; padding: 0px; border-radius: 0px; border: 0px currentColor; border-image: none; min-width: 0px !important; max-width: none !important; box-shadow: none;
+}
+#ls-global * .ls-container img {
+	background: none !important; padding: 0px; border-radius: 0px; border: 0px currentColor; border-image: none; min-width: 0px !important; max-width: none !important; box-shadow: none;
+}
+html * .ls-wp-container .ls-layer > * {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; line-height: normal;
+}
+body * .ls-wp-container .ls-layer > * {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; line-height: normal;
+}
+#ls-global * .ls-wp-container .ls-layer > * {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; line-height: normal;
+}
+.ls-wp-fullwidth-container {
+	box-sizing: content-box !important; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;
+}
+.ls-wp-fullwidth-helper {
+	box-sizing: content-box !important; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;
+}
+.ls-container {
+	box-sizing: content-box !important; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;
+}
+.ls-container * {
+	box-sizing: content-box !important; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;
+}
+html * .ls-yourlogo {
+	margin: 0px;
+}
+body * .ls-yourlogo {
+	margin: 0px;
+}
+#ls-global * .ls-yourlogo {
+	margin: 0px;
+}
+html * .ls-tn {
+	display: none;
+}
+body * .ls-tn {
+	display: none;
+}
+#ls-global * .ls-tn {
+	display: none;
+}
+.site {
+	overflow: visible !important;
+}
+.ls-debug-console * {
+	margin: 0px !important; padding: 0px !important; border: 0px currentColor !important; border-image: none !important; text-align: left !important; color: white !important; line-height: normal !important; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, sans-serif !important; font-style: normal !important; text-shadow: none !important; -webkit-font-smoothing: antialiased;
+}
+.ls-debug-console h1 {
+	padding-top: 10px !important; font-size: 17px !important; font-weight: bold !important;
+}
+.ls-debug-console h1:first-child {
+	padding-top: 0px !important;
+}
+.ls-debug-console ul {
+	list-style: none !important; padding-top: 10px !important;
+}
+.ls-debug-console li {
+	font-size: 13px !important; font-weight: normal !important; margin-left: 10px !important; position: relative !important;
+}
+html * .ls-debug-console li ul {
+	left: -10px; width: 260px; display: none;
+}
+body * .ls-debug-console li ul {
+	left: -10px; width: 260px; display: none;
+}
+#ls-global * .ls-debug-console li ul {
+	left: -10px; width: 260px; display: none;
+}
+.ls-debug-console li ul {
+	background: white !important; padding: 10px 10px 10px 0px !important; border-radius: 10px !important; bottom: 100% !important; position: absolute !important; box-shadow: 0px 0px 20px black !important;
+}
+html * .ls-debug-console li:hover ul {
+	display: block;
+}
+body * .ls-debug-console li:hover ul {
+	display: block;
+}
+#ls-global * .ls-debug-console li:hover ul {
+	display: block;
+}
+.ls-debug-console li ul * {
+	color: black !important;
+}
+.ls-debug-console a {
+	text-decoration: none !important; border-bottom-color: white !important; border-bottom-width: 1px !important; border-bottom-style: dotted !important;
+}
+.ls-error {
+	background: white !important; padding: 20px 40px 30px 80px !important; border-radius: 5px !important; width: auto !important; height: auto !important; color: white !important; position: relative !important; box-shadow: 0px 2px 20px -5px black; -moz-border-radius: 5px; -wenkit-border-radius: 5px;
+}
+.ls-error p {
+	margin: 0px !important; padding: 0px !important; border: 0px currentColor !important; border-image: none !important; text-align: justify !important; line-height: normal !important; font-family: Arial, sans-serif !important; text-shadow: none !important;
+}
+.ls-error .ls-error-title {
+	color: red !important; line-height: 40px !important; font-size: 16px !important; font-weight: bold !important;
+}
+.ls-error .ls-error-text {
+	color: rgb(85, 85, 85) !important; font-size: 13px !important; font-weight: normal !important;
+}
+.ls-error .ls-exclam {
+	background: red !important; border-radius: 50px !important; left: 20px !important; top: 20px !important; width: 40px !important; height: 40px !important; text-align: center !important; color: white !important; line-height: 40px !important; font-size: 30px !important; font-weight: bold !important; position: absolute !important; -moz-border-radius: 50px; -webkit-border-radius: 50px;
+}
+html * .ls-container .ls-shadow {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-layer > * {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-fullscreen {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-webkit-hack {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-3d-container {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-lt-container {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-lt-container * {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-thumbnail-wrapper {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-bottom-nav-wrapper {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-shadow {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-layer > * {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-fullscreen {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-webkit-hack {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-3d-container {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-lt-container {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-lt-container * {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-thumbnail-wrapper {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+body * .ls-container .ls-bottom-nav-wrapper {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-shadow {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-layer > * {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-fullscreen {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-webkit-hack {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-3d-container {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-lt-container {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-lt-container * {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-thumbnail-wrapper {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+#ls-global * .ls-container .ls-bottom-nav-wrapper {
+	transform: translateZ(0px); backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -o-transform: translateZ(0px); -moz-transform: translateZ(0px); -webkit-transform: translateZ(0px);
+}
+html * .ls-container .ls-video-layer {
+	transform: none !important; backface-visibility: visible !important; -moz-backface-visibility: visible; -moz-transform: none;
+}
+body * .ls-container .ls-video-layer {
+	transform: none !important; backface-visibility: visible !important; -moz-backface-visibility: visible; -moz-transform: none;
+}
+#ls-global * .ls-container .ls-video-layer {
+	transform: none !important; backface-visibility: visible !important; -moz-backface-visibility: visible; -moz-transform: none;
+}
+html * .ls-container .ls-layer iframe {
+	transform: none !important; backface-visibility: visible !important; -moz-backface-visibility: visible; -moz-transform: none;
+}
+body * .ls-container .ls-layer iframe {
+	transform: none !important; backface-visibility: visible !important; -moz-backface-visibility: visible; -moz-transform: none;
+}
+#ls-global * .ls-container .ls-layer iframe {
+	transform: none !important; backface-visibility: visible !important; -moz-backface-visibility: visible; -moz-transform: none;
+}
+html * .ls-container .ls-webkit-hack {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 1;
+}
+body * .ls-container .ls-webkit-hack {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 1;
+}
+#ls-global * .ls-container .ls-webkit-hack {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 1;
+}
+.layerslider a:hover {
+	text-decoration: none;
+}
+@media not all, not all, not all, not all, not all
+{
+#ls-test3d {
+	left: 9px; height: 3px; position: absolute;
+}
+}
